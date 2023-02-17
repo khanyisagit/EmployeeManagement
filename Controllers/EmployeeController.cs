@@ -13,7 +13,8 @@ namespace EmployeeManagement.Controllers
         // GET: Employee
         public ActionResult Index()
         {
-            return View(EmployeeDapperORM.ReturnList<Employee>("EmployeeViewAll"));
+           
+            return View(EmployeeDapperORM.ReturnList<Employee>("EmployeeViewAll" ));
         }
 
         [HttpGet]

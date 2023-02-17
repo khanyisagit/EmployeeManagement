@@ -10,7 +10,7 @@ namespace EmployeeManagement.Models
 {
     public class EmployeeDapperORM
     {
-        private static string connectionString = "Server=localhost;Database=master;Trusted_Connection=True;";
+        private static string connectionString = @"Server=.;Database=EmployeeDapperDB;User Id=sa;Password=Mokgat5@;";
 
         public static void ExecuteWithoutReturnScalar(string procedureName, DynamicParameters param = null)
         {
