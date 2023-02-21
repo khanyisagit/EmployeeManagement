@@ -33,13 +33,16 @@ namespace EmployeeManagement.Controllers
             }
             else
             {
+
                 db.tbl_Registration.Add(TBL_Registration);
+                ViewBag.Notification = "Successfully registered!";
                 db.SaveChanges();
 
                 //Session["User_Id"] = TBL_Registration.User_Id.ToString();
                 //Session["User_EmailAddress"] = TBL_Registration.User_EmailAddress.ToString();
-
+                
                 return RedirectToAction("Login", "User");  
+
             }   
 
         }
