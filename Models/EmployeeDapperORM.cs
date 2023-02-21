@@ -12,6 +12,8 @@ namespace EmployeeManagement.Models
     {
         private static string connectionString = @"Server=.;Database=EmployeeDapperDB;User Id=sa;Password=Mokgat5@;";
 
+
+
         public static void ExecuteWithoutReturnScalar(string procedureName, DynamicParameters param = null)
         {
             using (SqlConnection sqlCon = new SqlConnection(connectionString))

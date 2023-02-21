@@ -20,10 +20,26 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Home", "About", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
+
+                <ul class="nav navbar-nav" style="float:right !important">
+                    @if (Session["User_EmailAddress"] != null)
+                    {
+                        <li><p style="color:#00ff90;margin-top:15px;">Hello @Session["User_EmailAddress"]</p></li>
+                        <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+                    }
+
+                    else
+                    {
+                        <li>@Html.ActionLink("SignUp", "SignUp", "User")</li>
+                        <li>@Html.ActionLink("Login", "Login", "User")</li>
+                    }
+                </ul>
+
+
             </div>
         </div>
     </div>
