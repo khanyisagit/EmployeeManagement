@@ -29,7 +29,7 @@
                     @if (Session["User_EmailAddress"] != null)
                     {
                         <li><p style="color:#00ff90;margin-top:15px;">Hello @Session["User_EmailAddress"]</p></li>
-                        <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+                        <li>@Html.ActionLink("Logout", "Logout", "User")</li>
                     }
 
                     else
