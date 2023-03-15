@@ -11,8 +11,9 @@ namespace EmployeeManagement.Controllers
     {
         EmployeeDapperDBEntities db = new EmployeeDapperDBEntities();
         // GET: Home
-        public ActionResult Index()
+        public ViewResult Index()
         {
+            //Changed action result to view result
             return View(db.tbl_Registration.ToList());
         }
 
