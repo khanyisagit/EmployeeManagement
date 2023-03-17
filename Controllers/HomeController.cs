@@ -25,8 +25,10 @@ namespace EmployeeManagement.Controllers
 
         public ActionResult Contact()
         {
+            //Returning None existant View 
+            // Redundant Method 
             return View();
         }
 
     }
-}
+}0
